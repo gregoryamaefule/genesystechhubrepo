@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.overlay{
+    display: none;
+    position: absolute;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #F5F5F5;
+    position: relative;
+    font-family: poppins;
+}
+main{
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    background: #67B2AE0D;
+    gap: 1%;
+}
+section.summary{
+    flex-basis: 33%;
+    background: white;
+}
+section.payment{
+    flex-basis: 66%;
+    background: white;
+}
+div.summary{
+    width: 80%;
+    margin: 40px auto;
+    background: #67B2AE0D;
+    border-radius: 22px;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+div.summary h2{
+    text-align: center;
+    margin: 16px 0;
+    color: #67B2AE;
+}
+div.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    padding: 10px 0px;
+    font-size: 11px;
+}
+div.item p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-basis: 78%;
+}
+div.item p img{
+    float: left;
+    width: 52px;
+    height: 46px;
+}
+div.last{
+    margin: 0px;
+}
+div.total{
+    padding:  5px 0 10px 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+}
+div.total h2{
+    color: #67B3AE;
+}
+
+section.payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    padding: 40px;
+}
+div.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 42%;
+    padding: 0 0 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+form{
+    height: 58%;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+div.toptop{
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    width: 100%;
+    height: 68%;
+}
+div.toptop .portals{
+    flex-basis: 1fr;
+}
+div.toptop .portals img{
+    width: 100%;
+    height: 100%;
+}
+div.address{
+    align-self: flex-start;
+}
+div.address h3{
+    color: rgba(0, 0, 0, 0.6);
+}
+div.address p{
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.6);
+}
+input{
+    flex-basis: 100%;
+    margin-bottom: 14px;
+    padding: 8px;
+    font-weight: 700;
+    font-family: poppins;
+    font-size: 10px;
+    border: none;
+    background: #F5F5F5;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+input{
+    border: none;
+    outline: none;
+}
+input[type="date"]{
+    flex-basis: 46%;
+}
+input[placeholder="CVV"]{
+    flex-basis: 46%;
+}
+div button{
+    flex-basis: 34%;
+    padding: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+#cancel{
+    color: #67B2AE;
+    background: white;
+    border: 2px solid #67B2AE;
+}
+#finish{
+    color: white;
+    background: #67B2AE;
+}
+.overlay{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all;
+    transition-duration: 2s;
+    left: -100%;
+}
+.inneroverlay{
+    width: 70%;
+    height: 100vh;
+    background: white;
+    text-align: center;
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: poppins;
+}
+.inneroverlay img{
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+div.inneroverlay button{
+    background: #67B3AE;
+    flex-basis: 50px;
+    width: 210px;
+    border: none;
+    color: white;
+    align-self: center;
+    padding: 2px;
+    font-weight: 700;
+    cursor: pointer;
+}
+div.form{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
